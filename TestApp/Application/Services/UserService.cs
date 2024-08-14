@@ -1,14 +1,13 @@
-namespace TestApp.Application.Services;
 using TestApp.Application.Interfaces;
-using TestApp.Infrastructure.Data;
 using TestApp.Domain.Repositories;
 using TestApp.Domain.Entities;
+
+namespace TestApp.Application.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
 
-    public UserService(IUserRepository  
- userRepository)
+    public UserService(IUserRepository userRepository)
     {
         _userRepository = userRepository;  
 
