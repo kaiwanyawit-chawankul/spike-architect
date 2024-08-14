@@ -53,4 +53,11 @@ public class DependencyRules
         Classes().That().AreAssignableTo(ServiceInterfaces).Should().HaveNameContaining("Service")
             .Check(Architecture);
     }
+
+    [Fact]
+    public void RepositoryInterfacesShouldHaveCorrectName()
+    {
+        Interfaces().That().ResideInNamespace("TestApp.Domain.Repositories").Should().HaveNameContaining("Repository")
+            .Check(Architecture);
+    }
 }
