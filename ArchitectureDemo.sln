@@ -10,6 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9B7D63D-DF4E-4E98-B88B-BF6B4C6F057F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		diagram.puml = diagram.puml
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -29,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3036D6A2-6E69-47E0-8126-595FA73775CF}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,22 @@
+@startuml
+package Application {
+  interface IUserService
+  class UserService
+  class RegisterUserUseCase
+}
+
+package Domain {
+  class User
+  interface IUserRepository
+}
+
+package Infrastructure {
+  class UserRepository
+  class DbContext
+  class EmailService
+  class UserRepositoryAdapter
+}
+
+Application --|> Domain
+Infrastructure --|> Domain
+@enduml
